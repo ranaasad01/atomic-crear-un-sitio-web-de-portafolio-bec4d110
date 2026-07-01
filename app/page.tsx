@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useRef } from "react";
+import { useRef, useState } from "react";
 import { motion, useReducedMotion, type Variants } from "framer-motion";
 import { Code2 as Github, Briefcase as Linkedin, MessageCircle as Twitter, Mail, ArrowRight, ExternalLink, Star, Code, Layers, Zap, Users, CheckCircle, ChevronDown } from 'lucide-react';
 import { APP_NAME, APP_TAGLINE, APP_EMAIL, APP_GITHUB, APP_LINKEDIN, APP_TWITTER } from "@/lib/data";
@@ -713,9 +713,7 @@ export default function HomePage() {
               >
                 <div className="flex gap-1">
                   {[0, 1, 2, 3, 4].map((s) => (
-                    <Star key={s} size={13} className="text-amber-400 fill-amber-400" />
-                  ))}
-                </div>
+                    <Star key={s} size={13} className="text-amber-400 fill-amber-400" />Alex has a unique ability to translate complex requirements into elegant solutions.</div>
                 <p className="text-zinc-300 text-sm leading-relaxed text-pretty">{t.text}</p>
                 <footer className="flex items-center gap-3 pt-2 border-t border-zinc-800/60">
                   <img
